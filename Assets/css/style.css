@@ -662,6 +662,12 @@ footer .column a .fa-sitemap {
 footer .column a .fa-sitemap:hover {
   color: black;
 }
+footer .column a .fa-sass {
+  transition: 0.5s;
+}
+footer .column a .fa-sass:hover {
+  color: red;
+}
 footer .column a i {
   font-size: 2em;
   margin: 0% 1%;
