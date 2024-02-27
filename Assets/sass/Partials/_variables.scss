@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+$co_primary : #f1ece1;
+$co_text: #1c140c;
+$co_primary_darker: #787c83;
+$co_sec: #4e5a57;
+$co_sec_light: #6384a2;
+$co_sec_darler: #705e40;
+
+$sb: space-between;
+$sa: space-around;
+$c: center;
+$row: row;
+
+$f-w: 100%;
+$w:85%;
+
+body{
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
+    background-color: $co_primary;
+    position: relative;
+    font-size: 10px;
+}
+

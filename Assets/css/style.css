@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Russo One", sans-serif;
+  text-transform: uppercase;
+  background-color: #f1ece1;
+  position: relative;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #f1ece1;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+}
+
+.divider {
+  width: 100%;
+  height: 3px;
+  background-color: #4e5a57;
+  z-index: 2;
+}
+
+#to-top {
+  width: 48px;
+  height: 48px;
+  background-color: #4e5a57;
+  color: #f1ece1;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 25vh;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 0) {
+  #to-top {
+    bottom: 50vh;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 860px) {
+  #to-top {
+    bottom: 25vh;
+    right: 5%;
+  }
+}
+
+header {
+  background: linear-gradient(rgba(28, 20, 12, 0.7), rgba(28, 20, 12, 0.7)), url(../img/wallpaper-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  text-transform: uppercase;
+  z-index: -2;
+}
+header #logo_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-image: url(../img/Background.jpeg);
+  background-size: cover;
+}
+header #logo_nav #logo {
+  z-index: 2;
+  font-size: 2rem;
+}
+header #logo_nav #logo a {
+  transition: 0.5s;
+  color: #f1ece1;
+}
+@media (min-width: 0) {
+  header #logo_nav #logo a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 860px) {
+  header #logo_nav #logo a {
+    font-size: 40px;
+  }
+}
+header #logo_nav #logo a:hover {
+  background-color: #4e5a57;
+  color: #f1ece1;
+  padding: 10px 4px;
+  color: #1c140c;
+}
+header #logo_nav nav ul {
+  list-style: none;
+}
+header #logo_nav nav ul li {
+  display: inline-block;
+}
+header #logo_nav nav ul li a {
+  transition: 0.5s;
+}
+@media (min-width: 0) {
+  header #logo_nav nav ul li a {
+    font-size: 0.6rem;
+    padding: 7px 2px;
+  }
+}
+@media (min-width: 860px) {
+  header #logo_nav nav ul li a {
+    font-size: 0.8rem;
+    padding: 12px 4px;
+  }
+}
+@media (min-width: 1200px) {
+  header #logo_nav nav ul li a {
+    font-size: 1rem;
+    padding: 16px 6px;
+  }
+}
+header #logo_nav nav ul li a:hover {
+  background-color: #4e5a57;
+  color: #f1ece1;
+  color: #1c140c;
+}
+@media (min-width: 0) {
+  header #logo_nav nav ul li a:hover {
+    font-size: 0.6rem;
+    padding: 7px 2px;
+  }
+}
+@media (min-width: 860px) {
+  header #logo_nav nav ul li a:hover {
+    font-size: 0.8rem;
+    padding: 12px 4px;
+  }
+}
+@media (min-width: 1200px) {
+  header #logo_nav nav ul li a:hover {
+    font-size: 1rem;
+    padding: 16px 6px;
+  }
+}
+header #logo_nav nav ul li #checked:hover {
+  color: #1c140c;
+}
+@media (min-width: 0) {
+  header #logo_nav nav ul li #checked:hover {
+    font-size: 0.6rem;
+    padding: 7px 2px;
+  }
+}
+@media (min-width: 860px) {
+  header #logo_nav nav ul li #checked:hover {
+    font-size: 0.8rem;
+    padding: 12px 4px;
+  }
+}
+@media (min-width: 1200px) {
+  header #logo_nav nav ul li #checked:hover {
+    font-size: 1rem;
+    padding: 16px 6px;
+  }
+}
+header #logo_nav nav ul #checked {
+  background-color: #4e5a57;
+  color: #f1ece1;
+}
+@media (min-width: 0) {
+  header #logo_nav nav ul #checked {
+    font-size: 0.6rem;
+    padding: 7px 2px;
+  }
+}
+@media (min-width: 860px) {
+  header #logo_nav nav ul #checked {
+    font-size: 0.8rem;
+    padding: 12px 4px;
+  }
+}
+@media (min-width: 1200px) {
+  header #logo_nav nav ul #checked {
+    font-size: 1rem;
+    padding: 16px 6px;
+  }
+}
+header .wrap_h {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  width: 85%;
+  text-align: center;
+}
+@keyframes fade-in-1s {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header .wrap_h .fade-in-element {
+  opacity: 0;
+  animation: fade-in-1s 1s ease-in-out forwards;
+}
+header .wrap_h .text_wrap_blur {
+  overflow: hidden;
+  text-shadow: 2px 2px 4px rgba(78, 90, 87, 0.4);
+  color: #f1ece1;
+  width: 100%;
+}
+@media (min-width: 0) {
+  header .wrap_h .text_wrap_blur {
+    font-size: 3vw;
+    padding: 200px 0;
+  }
+}
+@media (min-width: 860px) {
+  header .wrap_h .text_wrap_blur {
+    font-size: 1.5vw;
+    padding: 150px 0;
+  }
+}
+header .wrap_h .text_wrap_blur span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: appear 0.5s ease-in-out 0.3s forwards;
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+header .wrap_h .text_wrap_blur h2 {
+  font-weight: 100;
+}
+header .wrap_h .img_wrap {
+  width: 100%;
+}
+header .wrap_h .img_wrap img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #4e5a57;
+  width: 100%;
+  font-size: 8vw;
+}
+@media (min-width: 0) {
+  main {
+    font-size: 10px;
+  }
+}
+@media (min-width: 860px) {
+  main {
+    font-size: 15px;
+  }
+}
+main #biografija {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+@media (min-width: 0) {
+  main #biografija {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+@media (min-width: 860px) {
+  main #biografija {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 85%;
+  }
+}
+@media (min-width: 0) {
+  main #biografija .text_holder {
+    width: 85%;
+  }
+}
+@media (min-width: 860px) {
+  main #biografija .text_holder {
+    width: 50%;
+    padding: 25px 2%;
+  }
+}
+@media (min-width: 1200px) {
+  main #biografija .text_holder {
+    padding: 30px 5%;
+  }
+}
+main #biografija .text_holder p {
+  text-align: justify;
+}
+main #biografija .img_wrap {
+  padding: 25px 0;
+}
+@media (min-width: 0) {
+  main #biografija .img_wrap {
+    width: 85%;
+  }
+}
+@media (min-width: 0) {
+  main #biografija .img_wrap {
+    width: 70%;
+  }
+}
+@media (min-width: 860px) {
+  main #biografija .img_wrap {
+    width: 45%;
+  }
+}
+main #biografija .img_wrap img {
+  width: 100%;
+  border: 5px solid #4e5a57;
+  border-radius: 4px;
+}
+main #vestine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+}
+main #vestine #icon_wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+@media (min-width: 0) {
+  main #vestine #icon_wrap #icon_holder {
+    padding: 5px;
+    font-size: 6vw;
+  }
+}
+@media (min-width: 860px) {
+  main #vestine #icon_wrap #icon_holder {
+    font-size: 60px;
+  }
+}
+main #vestine #icon_wrap #icon_holder i {
+  transition: 0.5s;
+  padding: 5px 10px;
+}
+main #vestine #icon_wrap #icon_holder i:hover {
+  background-color: #4e5a57;
+  color: #f1ece1;
+  color: #1c140c;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+main #vestine #icon_wrap #icon_holder p {
+  transition: 0.5s;
+  padding: 5px 10px;
+}
+main #vestine #icon_wrap #icon_holder p:hover {
+  background-color: #4e5a57;
+  color: #f1ece1;
+  color: #1c140c;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+main #projekti {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+main #projekti a {
+  color: #4e5a57;
+}
+main #projekti .img_wrap {
+  padding: 50px 0;
+}
+@media (min-width: 0) {
+  main #projekti .img_wrap {
+    width: 85%;
+  }
+  main #projekti .img_wrap a {
+    font-size: 15px;
+  }
+}
+@media (min-width: 860px) {
+  main #projekti .img_wrap {
+    width: 70%;
+  }
+  main #projekti .img_wrap a {
+    font-size: 1.4vw;
+  }
+}
+main #projekti .img_wrap img {
+  width: 100%;
+  border: 5px solid #4e5a57;
+  border-radius: 4px;
+}
+main #kontakt_lokacija {
+  background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/belgrade_01_street-network.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+  width: 100%;
+  color: #f1ece1;
+}
+@media (min-width: 0) {
+  main #kontakt_lokacija {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 860px) {
+  main #kontakt_lokacija {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+main #kontakt_lokacija #kontakt {
+  text-align: center;
+  padding: 50px 0;
+}
+@media (min-width: 0) {
+  main #kontakt_lokacija #kontakt {
+    width: 85%;
+  }
+}
+@media (min-width: 860px) {
+  main #kontakt_lokacija #kontakt {
+    width: 33%;
+  }
+}
+@media (min-width: 0) {
+  main #kontakt_lokacija #kontakt #forma {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+  }
+}
+@media (min-width: 860px) {
+  main #kontakt_lokacija #kontakt #forma {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+  }
+}
+main #kontakt_lokacija #kontakt #forma form input[type=text], main #kontakt_lokacija #kontakt #forma form input[type=email], main #kontakt_lokacija #kontakt #forma form textarea {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(78, 90, 87, 0.7);
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #1c140c;
+  color: #f1ece1;
+  transition: 200ms all;
+}
+@media (min-width: 0) {
+  main #kontakt_lokacija #kontakt #forma form input[type=text], main #kontakt_lokacija #kontakt #forma form input[type=email], main #kontakt_lokacija #kontakt #forma form textarea {
+    font-size: 8px;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+}
+@media (min-width: 860px) {
+  main #kontakt_lokacija #kontakt #forma form input[type=text], main #kontakt_lokacija #kontakt #forma form input[type=email], main #kontakt_lokacija #kontakt #forma form textarea {
+    font-size: 13px;
+    margin: 10px 0;
+    padding: 15px 0;
+  }
+}
+main #kontakt_lokacija #kontakt #forma form input[type=submit] {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  width: 25%;
+  background-color: rgba(78, 90, 87, 0.7);
+  color: #f1ece1;
+  transition: 0.5s;
+}
+@media (min-width: 0) {
+  main #kontakt_lokacija #kontakt #forma form input[type=submit] {
+    font-size: 12px;
+    padding: 5px 0px;
+    margin: 10px 0px;
+  }
+}
+@media (min-width: 860px) {
+  main #kontakt_lokacija #kontakt #forma form input[type=submit] {
+    font-size: 16px;
+    padding: 15px 5px;
+    margin: 15px 0px;
+  }
+}
+main #kontakt_lokacija #kontakt #forma form input[type=submit]:hover {
+  color: #1c140c;
+}
+@media (min-width: 0) {
+  main #kontakt_lokacija #kontakt #forma form input[type=submit]:hover {
+    font-size: 12px;
+    padding: 5px 0px;
+    margin: 10px 0px;
+  }
+}
+@media (min-width: 860px) {
+  main #kontakt_lokacija #kontakt #forma form input[type=submit]:hover {
+    font-size: 16px;
+    padding: 15px 5px;
+    margin: 15px 0px;
+  }
+}
+@media (min-width: 480px) {
+  main #kontakt_lokacija #lokacija .text_holder i, main #kontakt_lokacija #lokacija .text_holder h3, main #kontakt_lokacija #lokacija .text_holder p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 860px) {
+  main #kontakt_lokacija #lokacija .text_holder i, main #kontakt_lokacija #lokacija .text_holder h3, main #kontakt_lokacija #lokacija .text_holder p {
+    font-size: 20px;
+  }
+}
+
+footer {
+  background-image: url(../img/Background.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+@media (min-width: 0) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-size: 8px;
+  }
+  footer .column:nth-child(1) {
+    display: none;
+  }
+}
+@media (min-width: 860px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+  }
+  footer .column:nth-child(1) {
+    display: block;
+  }
+}
+footer .column {
+  width: 100%;
+  padding: 15px 0;
+  color: #f1ece1;
+  font-size: 15px;
+}
+@media (min-width: 0) {
+  footer .column {
+    font-size: 10px;
+  }
+}
+@media (min-width: 480px) {
+  footer .column {
+    font-size: 15px;
+  }
+}
+@media (min-width: 860px) {
+  footer .column {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .column {
+    font-size: 15px;
+  }
+}
+footer .column a {
+  color: #f1ece1;
+  padding: 10px 4px;
+}
+@media (min-width: 0) {
+  footer .column a {
+    font-size: 10px;
+  }
+}
+@media (min-width: 480px) {
+  footer .column a {
+    font-size: 13px;
+  }
+}
+@media (min-width: 860px) {
+  footer .column a {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .column a {
+    font-size: 15px;
+  }
+}
+footer .column a .fa-instagram {
+  transition: 0.5s;
+}
+footer .column a .fa-instagram:hover {
+  background: -webkit-linear-gradient(top, #405DE6 0%, #5B51D8 20%, #833AB4 30%, #C13584 40%, #E1306C 50%, #FD1D1D 60%, #F56040 70%, #777737 80%, #FCAF45 90%, #FFDC80 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer .column a .fa-youtube {
+  transition: 0.5s;
+}
+footer .column a .fa-youtube:hover {
+  color: red;
+}
+footer .column a .fa-rss {
+  transition: 0.5s;
+}
+footer .column a .fa-rss:hover {
+  color: orange;
+}
+footer .column a .fa-sitemap {
+  transition: 0.5s;
+}
+footer .column a .fa-sitemap:hover {
+  color: black;
+}
+footer .column a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+footer .column ul {
+  width: 100%;
+  list-style-type: none;
+}
+footer .column ul li {
+  padding: 10px 30px;
+}
+footer .column ul li a {
+  transition: 0.5s;
+}
+footer .column ul li a:hover {
+  background-color: #4e5a57;
+  color: #f1ece1;
+  padding: 10px 4px;
+  color: #1c140c;
+}
+footer .column form a:hover {
+  background-color: #4e5a57;
+  color: #f1ece1;
+  transition: 0.5s;
+  padding: 10px 4px;
+  color: #1c140c;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,113 @@
+footer{
+    @include bg-texture;
+    text-align: center;
+    @include xs{
+        @include position ($sa,$c, column-reverse);
+        font-size: 8px;
+        .column:nth-child(1) {
+            display: none;
+        }
+    }
+    @include m{
+        @include position ($sa);
+        font-size: 15px;
+        .column:nth-child(1) {
+            display: block;
+        }
+    }
+    .column{
+        width: 100%;
+        padding: 15px 0;
+        color:$co_primary;
+        font-size:15px;
+        @include xs{
+            font-size: 10px;
+        }
+        @include s{
+            font-size: 15px;
+        }
+        @include m{
+            font-size: 10px;
+        }
+        @include l{
+            font-size: 15px;
+        }
+
+        a{
+            color: $co_primary;
+            padding: 10px 4px;
+            @include xs{
+                font-size: 10px;
+            }
+            @include s{
+                font-size: 13px;
+            }
+            @include m{
+                font-size: 10px;
+            }
+            @include l{
+                font-size: 15px;
+            }
+
+            .fa-instagram{
+                transition: 0.5s;
+            }
+            .fa-instagram:hover{
+                background: -webkit-linear-gradient(top, #405DE6 0%, #5B51D8 20%, #833AB4 30%, #C13584 40% , #E1306C 50%, #FD1D1D 60%, #F56040 70%, #777737 80%, #FCAF45 90%, #FFDC80 100%);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .fa-youtube{
+                transition: 0.5s;
+            }
+            .fa-youtube:hover{
+                color: red;
+            }
+            .fa-rss{
+                transition: 0.5s;
+            }
+            .fa-rss:hover{
+                color: orange;
+            }
+            .fa-sitemap{
+                transition: 0.5s;
+            }
+            .fa-sitemap:hover{
+                color: black;  
+            }
+            i{
+                font-size:2em;
+                margin:0% 1%;
+            }
+        }
+
+        ul{
+            width:$f-w;
+            list-style-type: none;
+            li{
+                padding: 10px 30px;
+                a{
+                    transition: 0.5s;
+                }
+                a:hover{
+                    background-color: $co_sec;
+                    color: $co_primary;
+                    padding: 10px 4px;
+                    color: $co_text;
+                }
+            }
+        }
+        form{
+            a:hover{
+                background-color: $co_sec;
+                color: $co_primary;
+                transition: 0.5s;
+                padding: 10px 4px;
+                color: $co_text;
+            }
+        }
+    }
+
+}

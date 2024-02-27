@@ -1,0 +1,52 @@
+@mixin position($custom-jc: $sb, $custom-ai: $c, $custom-fd: $row) {
+    display: flex;
+    justify-content: $custom-jc;
+    align-items: $custom-ai;
+    flex-direction: $custom-fd;
+  }
+
+@mixin wCenter{
+    width: $f-w;
+    margin: 0 auto;
+}
+
+@mixin fade-in($duration: $animation-duration) {
+    $animation-name: fade-in-#{$duration};
+    @keyframes #{$animation-name} {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .fade-in-element {
+      opacity: 0;
+      animation: #{$animation-name} $duration ease-in-out forwards;
+    }
+  }
+
+  @mixin bg-texture{
+    background-image: url(../img/Background.jpeg);
+    background-size: cover;
+  }
+
+  @mixin border_text($custom-color: $co_text){
+    -webkit-text-stroke: 0.5px $custom-color;
+  }
+
+  @mixin word-by-word-animation($duration: 0.5s, $delay: 0.3s) {
+    overflow: hidden;
+    span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(100%);
+      animation: appear $duration ease-in-out $delay forwards;
+    }
+    @keyframes appear {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }

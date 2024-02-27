@@ -1,0 +1,231 @@
+main{
+    @include xs{
+        font-size: 10px;
+    }
+    @include m{
+       font-size:  15px;
+    }
+    @include position($sb, $c, column);
+    color: $co_sec;
+    width: $f-w;
+    font-size: 8vw;
+
+    #biografija{
+        @include xs{
+            @include position($sa, $c, column-reverse);
+            width: $f-w;
+        }
+        @include m{
+            @include position($sa);
+            width: $w;
+        }
+        
+        @include position();
+        .text_holder{
+            @include xs{
+                width: $w;
+            }
+            @include m{
+                width: 50%;
+                padding: 25px 2%;
+
+            }
+            @include l{
+                padding: 30px 5%;
+            }
+
+            p{
+                text-align: justify;
+            }
+        }
+        .img_wrap{
+            padding: 25px 0;
+            @include xs{
+                width: $w;
+            }
+            @include xs{
+                width: 70%;
+            }
+            @include m{
+                width: 45%;
+            }
+            img{
+                width: $f-w;
+                border: 5px solid $co_sec;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    #vestine{
+        @include position($sa,$c,column);
+        width: $w;
+        #icon_wrap{
+            @include position($sa);
+            #icon_holder{
+                @include xs{
+                    padding: 5px;
+                    font-size: 6vw;
+                }
+                @include m{
+                    font-size: 60px;
+                }
+                i{
+                    transition: 0.5s;
+                    padding: 5px 10px;
+                }
+                i:hover{
+                    background-color: $co_sec;
+                    color: $co_primary;
+                    color: $co_text;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                }
+                p{
+                    transition: 0.5s;
+                    padding: 5px 10px;
+                }
+                p:hover{
+                    background-color: $co_sec;
+                    color: $co_primary;
+                    color: $co_text;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+    #projekti{
+        width: $w;
+        @include position($sa,$c,column);
+        a{
+            color: $co_sec;
+
+        }
+        .img_wrap{
+            @include xs{
+                width: $w;
+                a{
+                    font-size: 15px;
+                }
+            }
+            @include m{
+                width: 70%;
+                a{
+                    font-size: 1.4vw;
+                }
+            }
+            padding: 50px 0;
+            img{
+                width: $f-w;
+                border: 5px solid $co_sec;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    #kontakt_lokacija{
+        @include xs{
+            @include position($sa, $c, column);
+        }
+        @include m{
+            @include position($sa);
+        }
+        background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/belgrade_01_street-network.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 0;
+        width: $f-w;
+        color: $co_primary;
+        #kontakt{
+            @include xs{
+                width: $w;
+            }
+            @include m{
+                width: 33%;
+            }
+            text-align: center;
+            padding: 50px 0;
+            #forma{
+                @include xs{
+                    @include position($sa, $c, column);
+                    font-size: 10px;
+                }
+                @include m{
+                    @include position($sa);
+                    font-size: 15px;
+                }
+                form{
+                    input[type="text"], input[type="email"], textarea {
+                        @include xs{
+                            font-size: 8px;
+                            margin: 5px 0;
+                            padding: 5px 0;
+                        }
+                        @include m{
+                            font-size: 13px;
+                            margin: 10px 0;
+                            padding: 15px 0;
+                        }
+                        text-transform: uppercase;
+                        font-family: "Russo One", sans-serif;
+                        width: $f-w;
+                        box-sizing: border-box;
+                        background-color: rgba($co_sec,0.7);
+                        border-radius: 5px;
+                        border: none;
+                        border-bottom: 1px solid $co_text;
+                        color: $co_primary;
+                        transition: 200ms all; 
+                    }
+                    input[type="submit"]{
+                        @include xs{
+                            font-size: 12px;
+                            padding: 5px 0px;
+                            margin: 10px 0px;
+                        }
+                        @include m{
+                            font-size: 16px;
+                            padding: 15px 5px;
+                            margin: 15px 0px;
+                        }
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-family: "Russo One", sans-serif;
+                        width: 25%;
+                        background-color: rgba($co_sec,0.7);
+                        color: $co_primary;
+                        transition: 0.5s;
+                    }
+                    input[type="submit"]:hover{
+                        @include xs{
+                            font-size: 12px;
+                            padding: 5px 0px;
+                            margin: 10px 0px;
+                        }
+                        @include m{
+                            font-size: 16px;
+                            padding: 15px 5px;
+                            margin: 15px 0px;
+                        }
+                        color:$co_text;
+                    }
+                }
+            }
+        }
+        #lokacija{
+            .text_holder{
+                i,h3,p{
+                    @include s{
+                        font-size: 12px;
+                    }
+                    @include m{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

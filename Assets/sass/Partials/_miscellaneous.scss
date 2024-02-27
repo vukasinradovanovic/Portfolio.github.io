@@ -1,0 +1,39 @@
+a{
+    text-decoration: none;
+    color: $co_primary;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+}
+
+.divider{
+    width: $f-w;
+    height: 3px;
+    background-color: $co_sec;
+    z-index: 2;
+}
+
+#to-top{
+    @include xs{
+        bottom: 50vh;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+    }
+    @include m{
+        bottom: 25vh;
+        right: 5%;
+    }
+    width: 48px;
+    height: 48px;
+    background-color: $co_sec;
+    color: $co_primary;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25vh;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
