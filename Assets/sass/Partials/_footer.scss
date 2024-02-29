@@ -50,7 +50,7 @@ footer{
             }
 
             .fa-instagram{
-                transition: 0.5s;
+                transition: $dr;
             }
             .fa-instagram:hover{
                 background: -webkit-linear-gradient(top, #405DE6 0%, #5B51D8 20%, #833AB4 30%, #C13584 40% , #E1306C 50%, #FD1D1D 60%, #F56040 70%, #777737 80%, #FCAF45 90%, #FFDC80 100%);
@@ -60,25 +60,25 @@ footer{
                 -webkit-text-fill-color: transparent;
             }
             .fa-youtube{
-                transition: 0.5s;
+                transition: $dr;
             }
             .fa-youtube:hover{
                 color: red;
             }
             .fa-rss{
-                transition: 0.5s;
+                transition: $dr;
             }
             .fa-rss:hover{
                 color: orange;
             }
             .fa-sitemap{
-                transition: 0.5s;
+                transition: $dr;
             }
             .fa-sitemap:hover{
                 color: black;  
             }
             .fa-sass{
-                transition: 0.5s;
+                transition: $dr;
             }
             .fa-sass:hover{
                 color: red;
@@ -96,13 +96,14 @@ footer{
             li{
                 padding: 10px 30px;
                 a{
-                    transition: 0.5s;
+                    transition: $dr;
                 }
                 a:hover{
                     background-color: $co_sec;
                     color: $co_primary;
                     padding: 10px 4px;
                     color: $co_text;
+                    border-radius: 3px;
                 }
             }
         }
@@ -110,11 +111,19 @@ footer{
             a:hover{
                 background-color: $co_sec;
                 color: $co_primary;
-                transition: 0.5s;
+                transition: $dr;
                 padding: 10px 4px;
                 color: $co_text;
             }
         }
+    }
+    #copyrgh_wrap{
+        @include xs{
+            padding-top: 20px;
+        }
+        @include m{
+            padding-top: 45px;
+        }  
     }
 
 }

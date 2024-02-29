@@ -1,0 +1,64 @@
+#forma{
+    @include xs{
+        @include position($sa, $c, column);
+        font-size: 10px;
+    }
+    @include m{
+        @include position($sa);
+        font-size: 15px;
+    }
+    form{
+        input[type="text"], input[type="email"], textarea {
+            @include xs{
+                font-size: 8px;
+                margin: 5px 0;
+                padding: 5px 0;
+            }
+            @include m{
+                font-size: 13px;
+                margin: 10px 0;
+                padding: 15px 0;
+            }
+            text-transform: uppercase;
+            font-family: "Russo One", sans-serif;
+            width: $f-w;
+            box-sizing: border-box;
+            background-color: rgba($co_sec,0.7);
+            border-radius: 5px;
+            border: none;
+            border-bottom: 1px solid $co_text;
+            color: $co_primary;
+            transition: $dr; 
+        }
+        input[type="submit"],input[type="submit"]:hover{
+            @include xs{
+                font-size: 10px;
+                padding: 5px 0px;
+                margin: 10px 0px;
+            }
+            @include s{
+                font-size: 12px;
+            }
+            @include m{
+                font-size: 14px;
+                padding: 15px 5px;
+                margin: 15px 0px;
+            }
+            @include l{
+                font-size: 16px;
+            }
+        }
+        input[type="submit"]{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Russo One", sans-serif;
+            width: 25%;
+            background-color: rgba($co_sec,0.7);
+            color: $co_primary;
+            transition: $dr;
+        }
+        input[type="submit"]:hover{
+            color:$co_text;
+        }
+    }
+}

@@ -3,6 +3,7 @@ a{
     color: $co_primary;
     text-align: center;
     font-family: "Russo One", sans-serif;
+    transition: 0.5s;
 }
 
 .divider{
@@ -12,28 +13,39 @@ a{
     z-index: 2;
 }
 
-#to-top{
-    @include xs{
-        bottom: 50vh;
-        right: 5%;
-        width: 30px;
-        height: 30px;
-    }
-    @include m{
-        bottom: 25vh;
-        right: 5%;
-    }
-    width: 48px;
-    height: 48px;
-    background-color: $co_sec;
-    color: $co_primary;
-    width: 48px;
-    height: 48px;
+#to-top,#to-top:hover{
+    @include position($c,$c);
     border-radius: 50%;
     position: absolute;
-    bottom: 25vh;
-    right: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 22px;
+    @include xs{
+        bottom: 38vh;
+        right: 5%;
+        width: 40px;
+        height: 40px;
+    }
+    @include s{
+        bottom: 45vh;
+        width: 55px;
+        height: 55px;
+    }
+    @include m{
+        bottom: 21vh;
+    }
+    @include l{
+        bottom: 25vh;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+#to-top{
+    background-color: $co_sec;
+    color: $co_primary;
+    transition: $dr;
+}
+
+#to-top:hover{
+    background-color: $co_sec;
+    color: $co_text;
 }
